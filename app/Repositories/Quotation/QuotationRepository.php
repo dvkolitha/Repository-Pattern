@@ -61,7 +61,7 @@ class QuotationRepository extends BaseRepository implements QuotationRepositoryI
         $this->createNotifications($quotation->id);
     } 
 
-    private function createQuotationRecordArray(array $data,$id)
+    public function createQuotationRecordArray(array $data,$id)
     {
     	$newArray = [];
          
